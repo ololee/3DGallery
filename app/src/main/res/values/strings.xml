@@ -1,0 +1,6 @@
+<resources>
+  <string name="app_name">Create3DGallery</string>
+  <string name="choose_all">Choose All</string>
+  <string name="choose_count">%d has been choosed</string>
+  <string name="make">Make</string>
+</resources>

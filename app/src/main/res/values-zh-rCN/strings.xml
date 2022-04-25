@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">3D画册</string>
+  <string name="choose_all">全选</string>
+  <string name="choose_count">已选中%d</string>
+  <string name="make">制作</string>
+</resources>

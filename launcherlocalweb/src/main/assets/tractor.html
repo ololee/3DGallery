@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Using Parcel with OpenLayers</title>
+    <style>#map, body, html {
+        height: 100%;
+        margin: 0
+    }
+
+    #map {
+        width: 100%;
+        display: flex
+    }
+
+    #map2 {
+        display: none;
+        width: 300px;
+        height: 200px;
+        margin: 5px;
+        position: absolute;
+        left: 0;
+        align-self: flex-start;
+        z-index: 3;
+        border: 3px solid #ffebcd;
+        border-radius: 5px
+    }</style>
+    <link rel="stylesheet" href="landleveler.03f0ffe7.css">
+</head>
+<body>
+<div id="map">
+    <div id="map2"></div>
+</div>
+<div style="display:none;" id="debug_panel">
+    <button style="height:40px;margin-left:2cm;" onclick="setTracking(2);">清除</button>
+    <button style="height:40px;margin-left:2cm;" onclick="setTracking(3, {baseline: 53.400});">开始测量</button>
+    <button style="height:40px;margin-left:2cm;" onclick="onVehicleMove(12717646.563138860, 2596347.301034435, 53.0);">
+        发送
+    </button>
+    <button style="height:40px;margin-left:2cm;" onclick="drawLine(
+			12717540.272285940, 2596012.474324554,
+			12717578.832244357, 2596051.45502294, true)">画线
+    </button>
+    <button style="height:40px;margin-left:2cm;" onclick="drawPolyer(116.335,39.975,111.335,39.975,null,null,-1)">
+        正方形
+    </button>
+    <button style="height:40px;margin-left:2cm;" onclick="createBox(116.335,39.975,111.335,39.975,116.336,39.976)">
+        画矩形
+    </button>
+    <button style="height:40px;margin-left:2cm;" onclick="createBoxAngle(
+			12717540.272285940, 2596012.474324554, 
+			12717578.832244357, 2596008.136301227, 
+			12717544.585535565, 2596051.255502294,true)">画矩形角度
+    </button>
+    <button style="height:40px;margin-left:2cm;" onclick="createRect(
+				12717540.272285940, 2596012.474324554, 
+				12717578.832244357, 2596008.136301227, 
+				12717544.585535565, 2596051.255502294,true)">画矩形2
+    </button>
+    <button style="height:40px;margin-left:2cm;" onclick="createRect2(
+						12717646.563138860, 2596347.301034435, 12717537.857455900, 2596347.629259130, 12717612.543220120, 2596347.686394332, true)">
+        画矩形3
+    </button>
+    <button style="height:40px;margin-left:2cm;" onclick="backCurrent()">原点</button>
+    <button style="height:40px;margin-left:2cm;" onclick="overlook()">俯瞰图</button>
+    <button style="height:40px;margin-left:2cm;" onclick="clearRect()">清除矩形</button>
+    <button onclick="eagleMap(true,2,1)">eagleMap</button>
+</div>
+<script src="./landleveler.1923ccd4.js"></script>
+<style>.ol-scale-line {
+    left: auto;
+    right: 120px;
+    background: none
+}
+
+.ol-scale-line-inner {
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    border-color: #000;
+    border-width: 2px
+}
+
+.ol-rotate {
+    display: none
+}</style>
+</body>
+</html>

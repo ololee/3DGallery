@@ -13,9 +13,10 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     binding = ActivityMainBinding.inflate(getLayoutInflater());
     setContentView(binding.getRoot());
+    FullScreenUtils.fullScreen(this,true);
     binding.web.getSettings().setJavaScriptEnabled(true);
     webViewClient = new MyWebViewClient();
     binding.web.setWebViewClient(webViewClient);
-    binding.web.loadUrl("http://localhost:9999/index.html");
+    binding.web.loadUrl("http://localhost:9999/tractor.html");
   }
 }

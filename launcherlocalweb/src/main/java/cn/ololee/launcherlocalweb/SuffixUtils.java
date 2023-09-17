@@ -10,6 +10,8 @@ public class SuffixUtils {
     mimeMap.put("html", "text/html");
     mimeMap.put("css", "text/css");
     mimeMap.put("js", "application/javascript");
+    mimeMap.put("png", "image/png");
+    mimeMap.put("jpg", "image/jpeg");
   }
 
   public static String getMimeTypeBySuffix(String suffix) {
